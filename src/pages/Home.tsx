@@ -154,6 +154,7 @@ const Home: React.FC = () => {
     <>
       <BrowserView>
         <ParallaxBanner
+          style={{ height: '80vh' }}
           layers={[
             {
               image: '/images/background1.png',
@@ -179,7 +180,6 @@ const Home: React.FC = () => {
               ),
             },
           ]}
-          style={{ height: '80%' }}
         />
         <Container>
           <ParallaxBanner
@@ -517,7 +517,13 @@ const Home: React.FC = () => {
         </Container>
         <Foot>Copyright Command 2021. All rights reserved.</Foot>
       </BrowserView>
-      <MobileView style={{ width: '100%', backgroundImage: "url('/images/mobile.png')", backgroundSize: 'cover' }} />
+      <MobileView
+        style={{
+          width: '100%',
+          backgroundImage: "url('/images/mobile.png')",
+          backgroundSize: 'cover',
+        }}
+      />
     </>
   );
 };
