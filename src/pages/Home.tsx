@@ -101,7 +101,7 @@ const PropelContainer = styled.div`
   width: 100%;
   background-image: url('/images/background5.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
 `;
 
@@ -189,7 +189,11 @@ const Home: React.FC = () => {
               children: (
                 <RowWrapper style={{ height: '100%' }}>
                   <TitleWrapper style={{ margin: 'auto' }}>
-                    <SubTitle style={{ lineHeight: '4rem' }} data-aos="fade-right" data-aos-delay="100">
+                    <SubTitle
+                      style={{ lineHeight: '4rem' }}
+                      data-aos="fade-right"
+                      data-aos-delay="100"
+                    >
                       B E L I E F
                     </SubTitle>
                     <Title>
@@ -482,7 +486,7 @@ const Home: React.FC = () => {
                       </span>
                     )}
                     textBack="지금 바로 지원하기 ➝"
-                    link="http://www.naver.com"
+                    link="https://dimigo.in/circle"
                     color="#ccd2ff"
                   />
                   <FlipCard
@@ -494,7 +498,7 @@ const Home: React.FC = () => {
                       </span>
                     )}
                     textBack="카카오톡 오픈채팅 ➝"
-                    link="http://www.naver.com"
+                    link="https://open.kakao.com/me/command2021"
                     color="#fff8b9"
                   />
                 </FooterContainer>

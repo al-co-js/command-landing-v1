@@ -51,17 +51,6 @@ const ItemN = styled.span`
   }
 `;
 
-const Item = styled(Link)`
-  color: #cdcdcd;
-  text-decoration: none;
-  margin: 0 1rem;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #ffffff;
-  }
-`;
-
 const Navigation: React.FC = () => (
   <Container>
     <LogoWrapper to="/">
@@ -76,8 +65,20 @@ const Navigation: React.FC = () => (
       >
         멤버
       </ItemN>
-      <Item to="https://facebook.com/command2021">소셜 미디어</Item>
-      <Item to="https://open.kakao.com/me/command2021">Contact Us</Item>
+      <ItemN
+        onClick={() => {
+          document.location.href = 'https://facebook.com/command2021';
+        }}
+      >
+        소셜 미디어
+      </ItemN>
+      <ItemN
+        onClick={() => {
+          document.location.href = 'https://open.kakao.com/me/command2021';
+        }}
+      >
+        Contact Us
+      </ItemN>
     </ItemWrapper>
   </Container>
 );
