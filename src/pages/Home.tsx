@@ -189,7 +189,7 @@ const Home: React.FC = () => {
               children: (
                 <RowWrapper style={{ height: '100%' }}>
                   <TitleWrapper style={{ margin: 'auto' }}>
-                    <SubTitle data-aos="fade-right" data-aos-delay="100">
+                    <SubTitle style={{ lineHeight: '4rem' }} data-aos="fade-right" data-aos-delay="100">
                       B E L I E F
                     </SubTitle>
                     <Title>
@@ -416,7 +416,7 @@ const Home: React.FC = () => {
             </LandingInner>
           </LandingOuter>
           <SubTitle
-            style={{ color: '#c4c4c4', marginTop: '5.063rem' }}
+            style={{ color: '#c4c4c4', marginTop: '5.063rem', lineHeight: '9rem' }}
             data-aos="fade"
             data-aos-delay="100"
           >

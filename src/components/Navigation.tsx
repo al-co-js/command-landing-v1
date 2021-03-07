@@ -29,10 +29,6 @@ const LogoWrapper = styled(Link)`
   margin-right: auto;
 `;
 
-const LogoText = styled.span`
-  margin-left: 1.25rem;
-`;
-
 const ItemWrapper = styled.div`
   display: flex;
   font-size: 1rem;
@@ -48,6 +44,7 @@ const ItemN = styled.span`
   text-decoration: none;
   margin: 0 1rem;
   transition: color 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     color: #ffffff;
@@ -68,8 +65,7 @@ const Item = styled(Link)`
 const Navigation: React.FC = () => (
   <Container>
     <LogoWrapper to="/">
-      <Logo src="/images/logo192.png" />
-      <LogoText>Command</LogoText>
+      <Logo src="/images/logo text.png" />
     </LogoWrapper>
     <ItemWrapper>
       <ItemN
@@ -80,8 +76,8 @@ const Navigation: React.FC = () => (
       >
         멤버
       </ItemN>
-      <Item to="https://facebook.com/command2021">소셜</Item>
-      <Item to="/contact">Contact Us</Item>
+      <Item to="https://facebook.com/command2021">소셜 미디어</Item>
+      <Item to="https://open.kakao.com/me/command2021">Contact Us</Item>
     </ItemWrapper>
   </Container>
 );
