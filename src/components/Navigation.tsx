@@ -43,6 +43,17 @@ const ItemWrapper = styled.div`
   margin-right: 15%;
 `;
 
+const ItemN = styled.span`
+  color: #cdcdcd;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ffffff;
+  }
+`;
+
 const Item = styled(Link)`
   color: #cdcdcd;
   text-decoration: none;
@@ -61,8 +72,15 @@ const Navigation: React.FC = () => (
       <LogoText>Command</LogoText>
     </LogoWrapper>
     <ItemWrapper>
-      <Item to="/member">Member</Item>
-      <Item to="/social">Social Media</Item>
+      <ItemN
+        onClick={() => {
+          // eslint-disable-next-line
+          alert('이 페이지는 신입생을 선발한 후에 활성화될 예정입니다.');
+        }}
+      >
+        멤버
+      </ItemN>
+      <Item to="https://facebook.com/command2021">소셜</Item>
       <Item to="/contact">Contact Us</Item>
     </ItemWrapper>
   </Container>
