@@ -36,7 +36,7 @@ const Front = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background-color: #ffffff40;
+  background-color: #ffffff30;
   backface-visibility: hidden;
   transform: rotateX(0deg);
   transition: all 0.5s ease;
@@ -53,7 +53,6 @@ const Back = styled.div<{ color: string }>`
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background-color: #ffffff40;
   backface-visibility: hidden;
   transform: rotateX(180deg);
   transition: all 0.5s ease;
