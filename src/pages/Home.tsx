@@ -271,6 +271,7 @@ const Home: React.FC = () => {
                           <EB>각자의 소질을 찾고 역량을 넓혀나가는 진취적인 기회</EB>
                           를 마련합니다.
                         </div>
+                        <br />
                       </Content>
                       <Content style={{ marginTop: '1.688rem' }}>
                         <div data-aos="fade-up" data-aos-delay="800">
@@ -488,7 +489,6 @@ const Home: React.FC = () => {
                       textFront={(
                         <span>
                           혁신에 동참할
-                          <br />
                           <br />
                           여러분을 찾습니다
                         </span>
