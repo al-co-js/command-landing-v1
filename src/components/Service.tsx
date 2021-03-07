@@ -11,7 +11,6 @@ const Container = styled.div`
   display: flex;
   border-radius: 10px;
   background-color: #ffffff90;
-  width: 100%;
   padding: 2.5rem 3.75rem;
   border: 1px solid #f2f2f2;
   margin-bottom: 1.875rem;
