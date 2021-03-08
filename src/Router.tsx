@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserView } from 'react-device-detect';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
@@ -44,7 +45,9 @@ const Router: React.FC = () => {
 
   return (
     <Container>
-      <Navigation />
+      <BrowserView>
+        <Navigation />
+      </BrowserView>
       <TransitionGroupEx>
         <CSSTransition key={location.key} timeout={{ enter: 450, exit: 150 }}>
           <Section>

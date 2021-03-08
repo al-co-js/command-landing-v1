@@ -517,13 +517,9 @@ const Home: React.FC = () => {
         </Container>
         <Foot>Copyright Command 2021. All rights reserved.</Foot>
       </BrowserView>
-      <MobileView
-        style={{
-          width: '100%',
-          backgroundImage: "url('/images/mobile.png')",
-          backgroundSize: 'cover',
-        }}
-      />
+      <MobileView>
+        <img style={{ width: '100%' }} src="/images/mobile.png" alt="mobile" />
+      </MobileView>
     </>
   );
 };
