@@ -507,9 +507,9 @@ const Home: React.FC = () => {
                             있으신가요?
                           </span>
                         )}
-                        textBack="카카오톡 오픈채팅 ➝"
-                        link="https://open.kakao.com/me/command2021"
-                        color="#fff8b9"
+                        textBack="인스타그램 ➝"
+                        link="https://www.instagram.com/command_2022/"
+                        color="#e1306c"
                       />
                     </FooterContainer>
                   ),
